@@ -3,13 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing-module';
 import { App } from './app';
-import { Header } from './header/header';
-import { WorkExperience } from './work-experience/work-experience';
-import { Education } from './education/education';
-import { Languages } from './languages/languages';
-import { Skills } from './skills/skills';
-import { Interests } from './interests/interests';
-import { Certificates } from './certificates/certificates';
+import { HeaderComponent } from './header/header';
+import { WorkExperienceComponent } from './work-experience/work-experience';
+import { EducationComponent } from './education/education';
+import { LanguagesComponent } from './languages/languages';
+import { SkillsComponent } from './skills/skills';
+import { InterestsComponent } from './interests/interests';
+import { CertificatesComponent } from './certificates/certificates';
 import { CardContainer } from './card-container/card-container';
 import { LeftContainer } from './left-container/left-container';
 import { RightContainer } from './right-container/right-container';
@@ -17,13 +17,13 @@ import { RightContainer } from './right-container/right-container';
 @NgModule({
   declarations: [
     App,
-    Header,
-    WorkExperience,
-    Education,
-    Languages,
-    Skills,
-    Interests,
-    Certificates,
+    HeaderComponent,
+    WorkExperienceComponent,
+    EducationComponent,
+    LanguagesComponent,
+    SkillsComponent,
+    InterestsComponent,
+    CertificatesComponent,
     CardContainer,
     LeftContainer,
     RightContainer
