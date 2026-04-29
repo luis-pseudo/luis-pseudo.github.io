@@ -1,10 +1,12 @@
 # See https://docs.github.com/get-started/getting-started-with-git/ignoring-files for more about ignoring files.
 
 # Compiled output
-/dist
 /tmp
 /out-tsc
 /bazel-out
+
+# GitHub Pages deployment - INCLUDE dist folder for deployment
+# /dist (commented out so dist/ is committed for GitHub Pages)
 
 # Node
 /node_modules
@@ -38,7 +40,15 @@ yarn-error.log
 testem.log
 /typings
 __screenshots__/
+*.md
 
 # System files
 .DS_Store
 Thumbs.db
+
+# Firebase & Environment
+.firebase/
+firebase-debug.log
+.env
+.env.local
+.env.*.local
