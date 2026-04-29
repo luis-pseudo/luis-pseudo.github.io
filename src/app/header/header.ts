@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
 import { HeaderService } from '../services/header-service/header';
 
 @Component({
@@ -7,9 +8,14 @@ import { HeaderService } from '../services/header-service/header';
   templateUrl: './header.html',
   styleUrl: './header.scss',
 })
-export class HeaderComponent {
-	constructor(public headerService: HeaderService)
-	{
+export class HeaderComponent implements OnInit {
+	headerData$!: Observable<any[]>;
+
+	constructor(public headerService: HeaderService) {
 		console.log(this.headerService);
+	}
+
+	ngOnInit() {
+		this.headerData$ = this.headerService.getAll();
 	}
 }
