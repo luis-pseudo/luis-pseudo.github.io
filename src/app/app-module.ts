@@ -1,5 +1,7 @@
 import { NgModule, provideBrowserGlobalErrorListeners } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { provideFirebaseApp, initializeApp } from '@angular/fire/app';
+import { provideFirestore, getFirestore } from '@angular/fire/firestore';
 
 import { AppRoutingModule } from './app-routing-module';
 import { App } from './app';
@@ -13,6 +15,7 @@ import { CertificatesComponent } from './certificates/certificates';
 import { CardContainer } from './card-container/card-container';
 import { LeftContainer } from './left-container/left-container';
 import { RightContainer } from './right-container/right-container';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -34,6 +37,8 @@ import { RightContainer } from './right-container/right-container';
   ],
   providers: [
     provideBrowserGlobalErrorListeners(),
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideFirestore(() => getFirestore()),
   ],
   bootstrap: [App]
 })
