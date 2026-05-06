@@ -3,17 +3,19 @@
   
   h2 {
     font-size: 1.5rem;
-    font-weight: bold;
+    font-weight: 700;
     margin-bottom: 1.5rem;
-    color: #1a1a1a;
-    border-bottom: 2px solid #ff4444;
-    padding-bottom: 0.5rem;
+    color: var(--text-dark);
+    border-bottom: 3px solid var(--primary-color);
+    padding-bottom: 0.8rem;
+    display: inline-block;
   }
   
   .interests-list {
     font-size: 0.95rem;
-    line-height: 1.8;
-    color: #555;
+    line-height: 2;
+    color: var(--text-light);
+    font-weight: 500;
     
     .interest-tag {
       margin-right: 0.5rem;

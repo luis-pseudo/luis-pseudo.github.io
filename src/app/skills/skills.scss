@@ -3,11 +3,12 @@
   
   h2 {
     font-size: 1.5rem;
-    font-weight: bold;
+    font-weight: 700;
     margin-bottom: 1.5rem;
-    color: #1a1a1a;
-    border-bottom: 2px solid #ff4444;
-    padding-bottom: 0.5rem;
+    color: var(--text-dark);
+    border-bottom: 3px solid var(--primary-color);
+    padding-bottom: 0.8rem;
+    display: inline-block;
   }
   
   .skills-grid {
@@ -19,21 +20,23 @@
       
       .skill-name {
         font-size: 0.95rem;
-        font-weight: 500;
-        margin-bottom: 0.3rem;
-        color: #1a1a1a;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+        color: var(--text-dark);
       }
       
       .skill-bar {
-        height: 8px;
-        background-color: #e0e0e0;
-        border-radius: 4px;
+        height: 10px;
+        background-color: var(--border-light);
+        border-radius: 8px;
         overflow: hidden;
+        box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.06);
         
         .skill-progress {
           height: 100%;
-          background-color: #ff4444;
-          transition: width 0.3s ease;
+          background: linear-gradient(90deg, var(--primary-color), var(--primary-light));
+          transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+          border-radius: 8px;
         }
       }
     }

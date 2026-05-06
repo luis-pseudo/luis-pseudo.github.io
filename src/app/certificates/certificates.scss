@@ -3,11 +3,12 @@
   
   h2 {
     font-size: 1.5rem;
-    font-weight: bold;
+    font-weight: 700;
     margin-bottom: 1.5rem;
-    color: #1a1a1a;
-    border-bottom: 2px solid #ff4444;
-    padding-bottom: 0.5rem;
+    color: var(--text-dark);
+    border-bottom: 3px solid var(--primary-color);
+    padding-bottom: 0.8rem;
+    display: inline-block;
   }
   
   .certificate-list {
@@ -15,20 +16,30 @@
     gap: 1rem;
     
     .certificate-item {
-      margin-bottom: 0.5rem;
-      padding-left: 1rem;
+      margin-bottom: 1rem;
+      padding: 1rem;
+      border-radius: 8px;
+      background-color: var(--bg-light);
+      border-left: 3px solid var(--primary-color);
+      transition: var(--transition);
+      
+      &:hover {
+        background-color: #f0f0f0;
+        box-shadow: var(--shadow-sm);
+      }
       
       h4 {
         font-size: 0.95rem;
-        font-weight: bold;
-        margin: 0 0 0.2rem 0;
-        color: #1a1a1a;
+        font-weight: 700;
+        margin: 0 0 0.3rem 0;
+        color: var(--text-dark);
       }
       
       .issuer {
         font-size: 0.85rem;
         margin: 0;
-        color: #666;
+        color: var(--text-light);
+        font-weight: 500;
       }
     }
   }
