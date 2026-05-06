@@ -1,16 +1,20 @@
-header {
-  padding: 2rem;
-  background: linear-gradient(135deg, var(--bg-white) 0%, #f0f0f0 100%);
+header.header {
+  padding: 2.5rem;
+  background-color: #1a1a1a !important;
   margin-bottom: 0;
   border-bottom: none;
-  box-shadow: var(--shadow-md);
+  box-shadow: none;
   width: 100%;
+  color: white;
+  display: block;
   
   .header-content {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    gap: 2rem;
+    align-items: center;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
     
     .header-main {
       flex: 1;
@@ -24,23 +28,19 @@ header {
           flex: 1;
           
           .name {
-            font-size: 2.5rem;
-            margin: 0 0 0.5rem 0;
-            font-weight: 800;
-            color: var(--text-dark);
-            background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+            font-size: 2rem;
+            margin: 0 0 0.3rem 0;
+            font-weight: 700;
+            color: white;
           }
           
           .summary {
             margin: 0;
-            font-size: 0.95rem;
-            line-height: 1.7;
-            color: var(--text-light);
+            font-size: 0.9rem;
+            line-height: 1.5;
+            color: #cccccc;
             max-width: 600px;
-            font-weight: 500;
+            font-weight: 400;
           }
         }
         
@@ -48,18 +48,13 @@ header {
           flex-shrink: 0;
           
           .profile-image {
-            width: 150px;
-            height: 150px;
-            border-radius: 12px;
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
             object-fit: cover;
-            border: 3px solid var(--primary-color);
-            box-shadow: var(--shadow-md);
+            border: 3px solid white;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
             transition: var(--transition);
-            
-            &:hover {
-              transform: scale(1.05);
-              box-shadow: var(--shadow-lg);
-            }
           }
         }
       }
@@ -67,19 +62,23 @@ header {
     
     .contact-info {
       text-align: right;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      white-space: nowrap;
       
       .contact-item {
-        font-size: 0.9rem;
-        line-height: 1.8;
-        color: var(--text-light);
-        font-weight: 500;
+        font-size: 0.85rem;
+        line-height: 1.4;
+        color: #cccccc;
+        font-weight: 400;
       }
     }
   }
   
   hr {
-    margin: 1.5rem 0 0 0;
+    margin: 0;
     border: none;
-    border-top: 1px solid var(--border-light);
+    border-top: none;
   }
 }
