@@ -3,17 +3,23 @@
   
   h2 {
     font-size: 1.5rem;
-    font-weight: bold;
+    font-weight: 700;
     margin-bottom: 1.5rem;
-    color: #1a1a1a;
-    border-bottom: 2px solid #ff4444;
-    padding-bottom: 0.5rem;
+    color: var(--text-dark);
+    border-bottom: 3px solid var(--primary-color);
+    padding-bottom: 0.8rem;
+    display: inline-block;
   }
   
   .experience-item {
     margin-bottom: 1.5rem;
-    padding-left: 1rem;
-    border-left: 4px solid #ff4444;
+    padding-left: 1.5rem;
+    border-left: 4px solid var(--primary-color);
+    transition: var(--transition);
+    
+    &:hover {
+      padding-left: 2rem;
+    }
     
     .experience-header {
       display: flex;
@@ -23,36 +29,41 @@
       
       .date-range {
         font-size: 0.85rem;
-        color: #ff4444;
-        font-weight: 600;
+        color: var(--primary-color);
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
       }
       
       .location {
         font-size: 0.85rem;
-        color: #ff4444;
-        font-weight: 600;
+        color: var(--primary-color);
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
       }
     }
     
     .title {
       font-size: 1.1rem;
-      font-weight: bold;
-      margin: 0 0 0.2rem 0;
-      color: #1a1a1a;
+      font-weight: 700;
+      margin: 0 0 0.3rem 0;
+      color: var(--text-dark);
     }
     
     .company {
       font-size: 0.95rem;
       margin: 0 0 0.5rem 0;
-      color: #666;
-      font-weight: 500;
+      color: var(--text-light);
+      font-weight: 600;
     }
     
     .description {
       font-size: 0.9rem;
       line-height: 1.5;
       margin: 0;
-      color: #555;
+      color: var(--text-light);
+      font-weight: 500;
     }
   }
 }
