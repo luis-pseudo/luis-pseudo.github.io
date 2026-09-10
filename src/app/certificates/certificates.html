@@ -1,9 +1,16 @@
 <section class="certificates">
   <h2>Achievements & Certificates</h2>
   <div class="certificate-list">
-    <div class="certificate-item" *ngFor="let item of certificatesData$ | async">
-      <h4>{{ item.name }}</h4>
-      <p class="issuer">{{ item.issuer }} - {{ item.year }}</p>
-    </div>
+    @for (item of certificatesData$ | async; track item.id) {
+      <div class="certificate-item">
+        <h4>{{ item.name }}</h4>
+        <p class="issuer">{{ item.issuer }} - {{ item.year }}</p>
+        @if (item.url) {
+          <p class="ref">
+            <a [href]="item.url" target="_blank" rel="noopener noreferrer">View Certificate</a>
+          </p>
+        }
+      </div>
+    }
   </div>
 </section>

@@ -1,58 +1,71 @@
 .work-experience {
-  margin-bottom: 2rem;
+  margin-bottom: 0;
   
   h2 {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 1.5rem;
-    color: #1a1a1a;
-    border-bottom: 2px solid #ff4444;
-    padding-bottom: 0.5rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 0 0 1rem 0;
+    color: var(--text-dark);
+    border-bottom: none;
+    padding-bottom: 0;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1.1rem;
   }
   
   .experience-item {
     margin-bottom: 1.5rem;
-    padding-left: 1rem;
-    border-left: 4px solid #ff4444;
+    padding-left: 0;
+    border-left: none;
+    transition: var(--transition);
     
     .experience-header {
       display: flex;
       justify-content: space-between;
-      align-items: center;
-      margin-bottom: 0.3rem;
+      align-items: flex-start;
+      margin-bottom: 0.2rem;
+      gap: 1rem;
       
       .date-range {
-        font-size: 0.85rem;
-        color: #ff4444;
+        font-size: 0.75rem;
+        color: var(--text-lighter);
         font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        flex-shrink: 0;
       }
       
       .location {
-        font-size: 0.85rem;
-        color: #ff4444;
+        font-size: 0.75rem;
+        color: var(--text-lighter);
         font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        flex-shrink: 0;
       }
     }
     
     .title {
-      font-size: 1.1rem;
-      font-weight: bold;
-      margin: 0 0 0.2rem 0;
-      color: #1a1a1a;
+      font-size: 0.95rem;
+      font-weight: 700;
+      margin: 0.2rem 0 0.1rem 0;
+      color: var(--text-dark);
     }
     
     .company {
-      font-size: 0.95rem;
-      margin: 0 0 0.5rem 0;
-      color: #666;
-      font-weight: 500;
+      font-size: 0.85rem;
+      margin: 0 0 0.4rem 0;
+      color: var(--text-lighter);
+      font-weight: 600;
     }
     
     .description {
-      font-size: 0.9rem;
+      font-size: 0.85rem;
       line-height: 1.5;
       margin: 0;
-      color: #555;
+      color: var(--text-light);
+      font-weight: 400;
     }
   }
 }
