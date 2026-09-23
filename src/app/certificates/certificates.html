@@ -5,7 +5,7 @@
       <div class="certificate-item">
         <h4>{{ item.name }}</h4>
         <p class="issuer">{{ item.issuer }} - {{ item.year }}</p>
-        @if (item.url) {
+        @if (item?.url?.trim()) {
           <p class="ref">
             <a [href]="item.url" target="_blank" rel="noopener noreferrer">View Certificate</a>
           </p>
